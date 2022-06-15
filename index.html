@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<head>
+    <title>SELESTORE</title>
+    <meta charset="utf-8">
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="menu/css/simple_menu.css">
+    <!--JS FILES -->
+    <script src="js/jquery.tools.min.js"></script>
+    <script>
+        $(function () {
+            $("#prod_nav ul").tabs("#panes > div", {
+                effect: 'fade',
+                fadeOutSpeed: 400
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".pane-list li").click(function () {
+                window.location = $(this).find("a").attr("href");
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <!-- Logo/Title -->
+    <div id="site_title"><a href="index.html"><h1>SELESTORE</h1></a></div>
+    <!-- Main Menu -->
+    <ol id="menu">
+        <li class="active_menu_item"><a href="index.html" style="color:#FFF">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ol>
+</div>
+<!-- END header -->
+<div id="container">
+    <!-- tab panes -->
+    <section>
+        <div style="clear:both"></div>
+        <h1 style="padding: 20px 0">SELESTORE Electonic store</h1>
+        <p>Welcome to SELESTORE electronic store, you will find every electronic gadget to help you make your life
+            easier.
+        </p>
+    </section>
+    <section id="prod_wrapper">
+        <div id="panes">
+            <div><img src="img/demo/1.jpg" alt="MacBook DVD">
+                <h5>MacBook DVD</h5>
+                <p>MacBook DVD Player is the best audio and video entertainment equipment.
+                    Enjoy real-free Movie and TV Shows with your DVD/CD disks.
+                    You can customize your entertainment with skip, slow motion, advance zoom, single step play
+                    functionality.
+                    Equipped with anti-skip protection, you needn’t worry about your viewing is interrupted by sudden
+                    vibration.Fast reading within 5 seconds and without noise. </p>
+                <p style="text-align:right; margin-right: 16px"><a href="#"
+                                                                   class="button">Buy
+                    Now</a></p>
+            </div>
+            <div><img src="img/demo/2.jpg" alt="Mac Mini">
+                <h5>Mac Mini</h5>
+                <p>The Apple M1 chip takes our most versatile, do-it-all desktop into another dimension. With up to 3x
+                    faster CPU performance. Up to 6x faster graphics. An advanced Neural Engine for up to 15x faster
+                    machine learning. Get ready to work, play, and create on Mac mini with speed and power beyond
+                    anything you ever imagined. </p>
+                <p style="text-align:right; margin-right: 16px"><a href="#" class="button">More Info</a> <a href="#"
+                                                                                                            class="button">Buy
+                    Now</a></p>
+            </div>
+            <div><img src="img/demo/3.jpg" alt="IPhone 2">
+                <h5>IPhone 2</h5>
+                <p>The iPhone is a line of smartphones designed and marketed by Apple Inc. These devices use Apple's iOS
+                    mobile operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on
+                    January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As of
+                    November 1, 2018, more than 2.2 billion iPhones had been sold. </p>
+                <p style="text-align:right; margin-right: 16px"><a href="#"
+                                                                   class="button">Buy
+                    Now</a></p>
+            </div>
+            <div><img src="img/demo/4.jpg" alt="MacBook Air">
+                <h5>MacBook Air</h5>
+                <p>The MacBook Air is 11.3mm thick, making it a bit thinner thanx the prior-generation MacBook Air, and
+                    it weighs 2.7 pounds. It is just about the same size as the prior-generation model at 11.97 inches
+                    wide and 8.46 inches tall. </p>
+                <p style="text-align:right; margin-right: 16px"><a href="#"
+                                                                   class="button">Buy
+                    Now</a></p>
+            </div>
+            <div><img src="img/demo/5.jpg" alt="iPod">
+                <h5>iPod</h5>
+                <p>iPod has captivated users all over the world who love the ability to take their music with them on
+                    the go. Today, the experience of taking one’s music library out into the world has been integrated
+                    across Apple’s product line — from iPhone and Apple Watch to iPad and Mac — along with access to
+                    more than 90 million songs and over 30,000 playlists available via Apple Music. </p>
+                <p style="text-align:right; margin-right: 16px"><a href="#" class="button">Buy Now</a></p>
+            </div>
+        </div>
+        <!-- END tab panes -->
+        <br clear="all">
+        <!-- navigator -->
+        <div id="prod_nav">
+            <ul>
+                <li><a href="#1"><img src="img/demo/thumb1.jpg" alt="MacBook DVD"><strong>MacBook DVD</strong> $ 199</a>
+                </li>
+                <li><a href="#2"><img src="img/demo/thumb2.jpg" alt="Mac Mini"><strong>Mac Mini</strong> $ 125</a></li>
+                <li><a href="#3"><img src="img/demo/thumb3.jpg" alt="IPhone 2"><strong>IPhone 2</strong> $ 480</a></li>
+                <li><a href="#4"><img src="img/demo/thumb4.jpg" alt="MacBook Air"><strong>MacBook Air</strong> $
+                    1099</a></li>
+                <li><a href="#5"><img src="img/demo/thumb5.jpg" alt="iPod"><strong>iPod</strong> $ 99</a></li>
+            </ul>
+        </div>
+        <!-- close navigator -->
+    </section>
+    <!-- END prod wrapper -->
+    <div style="clear:both"></div>
+
+</div>
+<div id="footer">
+    <h6>&copy; 2022, All rights reserved</h6>
+    <div style="clear:both"></div>
+</div>
+<div style="clear:both; height: 40px"></div>
+</body>
+</html>

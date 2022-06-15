@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<head>
+    <title>SELESTORE</title>
+    <meta charset="utf-8">
+    <!-- CSS Files -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="menu/css/simple_menu.css">
+    <!--JS FILES -->
+    <script>
+        $(function () {
+            $("#prod_nav ul").tabs("#panes > div", {
+                effect: 'fade',
+                fadeOutSpeed: 400
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".pane-list li").click(function () {
+                window.location = $(this).find("a").attr("href");
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <!-- Logo/Title -->
+    <div id="site_title"><a href="index.html"><h1>SELESTORE</h1></a></div>
+    <!-- Main Menu -->
+    <ol id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="active_menu_item" style="color:#FFF"><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ol>
+</div>
+<!-- END header -->
+<div id="container">
+    <div style="clear:both"></div>
+    <h1 style="padding: 20px 0">SELESTORE Electonic store</h1>
+    <p>Welcome to SELESTORE electronic store, you will find every electronic gadget to help you make your life easier.
+    </p>
+    <!-- First Column -->
+    <div class="one-fourth">
+        <div class="heading_bg">
+            <h4>Mac mini</h4>
+        </div>
+        <img src="img/demo/2.jpg" width="217" alt="Mac mini"></div>
+    <!-- Second Column -->
+    <div class="one-fourth">
+        <div class="heading_bg">
+            <h4>MacBook Air</h4>
+        </div>
+        <img src="img/demo/4.jpg" width="217" alt="MacBook Air"></div>
+    <!-- Third Column -->
+    <div class="one-fourth">
+        <div class="heading_bg">
+            <h4>IPhone 2</h4>
+        </div>
+        <img src="img/demo/3.jpg" width="217" alt="IPhone 2"></div>
+    <!-- Fourth Column -->
+    <div class="one-fourth last">
+        <div class="heading_bg">
+            <h4>MacBook DVD</h4>
+        </div>
+        <img src="img/demo/1.jpg" width="217" alt="MacBook DVD"></div>
+
+    <div style="clear:both; height: 40px"></div>
+</div>
+
+<div id="footer">
+    <h6>&copy; 2022, All rights reserved</h6>
+    <div style="clear:both"></div>
+</div>
+<div style="clear:both; height: 40px"></div>
+
+</body>
+</html>
